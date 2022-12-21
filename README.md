@@ -13,3 +13,8 @@
 ![image](https://user-images.githubusercontent.com/63488322/208947894-efa629c8-4645-410a-a7ac-b8c78dd58d1d.png)
 
 5. Paste [settings.json](https://github.com/masachika-kamada/windows-terminal-setting/blob/main/settings.json) into settings.json
+
+## others
+
+- Customizing the shortcuts that can be executed with `win + R` can be useful -> [winR_shortcut](https://github.com/masachika-kamada/windows-terminal-setting/blob/main/winR_shortcut.md)
+- It is very useful to set up a PowerShell alias -> [powershell_alias](https://github.com/masachika-kamada/windows-terminal-setting/blob/main/powershell_alias.md)
