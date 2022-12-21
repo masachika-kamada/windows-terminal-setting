@@ -1,4 +1,4 @@
-# windows-terminal-setting
+# windows terminal setting
 
 ## usage
 
