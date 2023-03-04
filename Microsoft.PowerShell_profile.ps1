@@ -21,12 +21,28 @@ function dcur(){
 function de(){
   docker exec -it $(dcur) bash
 }
+function desh(){
+  docker exec -it $(dcur) sh
+}
 function dstart(){
   docker start $args
 }
 function dstop(){
   docker stop $(dcur)
 }
+
+function drm(){
+  docker rm $args
+}
+
+function drmi(){
+  docker rmi $args
+}
+
+function dcu(){
+  docker-compose up $args
+}
+
 Set-Alias d docker
 
 # --- Git ---#
@@ -45,6 +61,18 @@ function gpush(){
 function gpushu(){
   git push -u origin main
 }
+function gnewb(){
+  git checkout -b  $args
+}
+function grmb(){
+  git branch -d $args
+}
+function gstash(){
+  git stash
+}
+function gstashp(){
+  git stash pop
+}
 
 # --- General ---#
 function ll(){
@@ -52,6 +80,12 @@ function ll(){
 }
 function tar(){
   tar -xzf $args
+}
+function search(){
+  grep $args * -r
+}
+function remove-dir(){
+  Remove-Item -Path $args -Recurse -Force
 }
 
 # --- Anaconda ---#
@@ -64,7 +98,7 @@ function conda(){
 function cond(){
   conda deactivate
 }
-function cact(){
+function cac(){
   conda activate $args
 }
 function ccre(){
@@ -75,4 +109,7 @@ function crem(){
 }
 function cinf(){
   conda info -e
+}
+function pup(){
+  pip install -U $args
 }
