@@ -73,6 +73,12 @@ function gstash(){
 function gstashp(){
   git stash pop
 }
+function gbranchsync(){
+  git fetch --prune
+}
+function grmcommit(){
+  git reset --soft HEAD^
+}
 
 # --- General ---#
 function ll(){
@@ -86,6 +92,9 @@ function search(){
 }
 function remove-dir(){
   Remove-Item -Path $args -Recurse -Force
+}
+function edit(){
+  notepad $args
 }
 
 # --- Anaconda ---#
